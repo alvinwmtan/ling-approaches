@@ -1,0 +1,36 @@
+project:
+  type: book
+
+book:
+  title: "Approaches to Linguistics"
+  subtitle: "A reader in the history and philosophy of linguistics"
+  author: "Alvin W. M. Tan"
+  date: "2/4/2025"
+  chapters:
+    - index.qmd
+    - 01-premodern-linguistics.qmd
+    - 02-historical-turn.qmd
+    - 03-european-structuralism.qmd
+    - 04-american-structuralism.qmd
+    - 05-generativism.qmd
+    - 06-universals-variation.qmd
+    - 07-meaning-function.qmd
+    - 08-computational-approaches.qmd
+    - 09-contemporary-linguistics.qmd
+    - references.qmd
+
+bibliography: references.bib
+csl: apa.csl
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+      - theme.scss
+    linkcolor: "#f29105"
+  pdf:
+    documentclass: scrreprt
+
+
+

@@ -1,0 +1,29 @@
+# Introduction {.unnumbered}
+
+Linguistics is a broad and varied discipline, with a wide range of constituent schools, approaches, and domains. This reader on approaches to linguistics aims to explore the history of ideas in the study of language, along with important scholars, philosophies, and movements. It will also provide an overview of how certain key concepts are handled by various linguistics theories, with a particular focus on the nature of language, the aim of linguistics, and the methods of language study.
+
+## Why history and philosophy?
+
+Superficially, it may seem that the history of linguistics bears little relevance to the current-day study of language. After all, many historical ideas about language have been discarded due to their inaccuracy or invalidity. However, there are at least three reasons why understanding the development of linguistics is important for contemporary linguisticians.
+
+Firstly, a big-picture overview of ideas in linguistics helps to instil an appreciation of the diversity of views within linguistics. The nature of linguistics teaching means that some perspectives will necessarily be emphasised over others, due to the specialisation of the faculty, the limitations of curricula, or other factors. Considering the history of linguistics helps linguisticians to understand that there are multiple ways to approach similar issues, thereby providing a more well-rounded and extensive understanding of linguistics.
+
+Secondly, studying the history of linguistics allows for the contextualisation of approaches and movements, particularly with regard to contributing philosophical and ideological trends. This permits a grounding of various linguistics views in terms of their intellectual tradition, and also encourages a more careful examination of the assumptions and fundamental principles of various theories.
+
+Thirdly, a synoptic and diachronic approach to understanding linguistics enables linguisticians to recognise how their own work and areas of study fit into the larger network of ideas in linguistics. The study of language is not just diverse, but highly interconnected, and developments in different subdomains affect one another. As such, linguisticians with a broader perspective will be able to adopt a more holistic and integrative approach, considering possible inputs and implications from related subfields.
+
+## Approaching approaches
+
+Despite the broad remit of this reader, it is not quite the same as a traditional "Introduction to Linguistics" class, in which students go through the traditional levels of linguistic analysis (phonetics, phonology, morphology, syntax, semantics, and pragmatics) and perhaps various domains of analysis (theoretical, historical, socio-, psycho-, neuro-, and computational linguistics). Rather, this reader is organised by movements and ideas, which cut across levels and domains of linguistic analysis; many of these other topics will be mentioned, but more attention is paid to ideological groupings rather than subdisciplinary groupings. 
+
+As such, this survey of approaches to linguistics requires a holistic perspective, encompassing historical, philosophical, and linguistic angles. Interpreting and evaluating the ideas explored will require not only the examination of their coherence as linguistic theories, but also their position in _context_, as well as the way they handle various linguistic _concepts_. 
+
+Context refers to the historical and ideological backdrop of various theories, and is important in placing an event in its appropriate setting. For example, it may explain why certain ideas which linguistics now takes for granted were revolutionary in their day, or why certain perspectives that now seem outdated were adopted in the first place. Understanding context allows for accurate judgement of the contributions of such ideas in terms of the linguistics knowledge of the time.
+
+Concepts refer to important ideas and issues that span across multiple theories and movements, which may address such concepts differently. This allows for comparisons between the perspectives and principles of different ideologies, thereby describing crucial philosophical differences between different schools of thought. Important concepts include the obvious "language" and "linguistics", but also many other aspects which have been considered by many different linguisticians, such as "methods", "data", "meaning", "form", "function", and the like.
+
+This reader is structured in a largely chronological fashion, since this provides a straightforward way to consider contexts and developments. There has inevitably been some editorial decision about what material to include and what to omit; in general, the ideas explored have had a profound impact on the field and have shaped the way linguistics has developed. We begin with an overview of pre-modern linguistics, followed by a look at the emergence of modern linguistics and the development of the structuralist perspective. This leads into the middle of the twentieth century and the introduction of generativism, typology, variationism, and functionalism, and finally we end off by exploring some recent developments and directions in linguistics.
+
+## Acknowledgements
+
+Thanks to Toby Lowther and Dorcas Chua for editorial feedback on an earlier draft of this reader.
