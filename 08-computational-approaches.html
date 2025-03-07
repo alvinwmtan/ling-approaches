@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>8&nbsp; Computational approaches – Approaches to Linguistics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./09-contemporary-linguistics.html" rel="next">
+<link href="./07-meaning-function.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-12ba733f3aefac2e6c33271723ac6401.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08-computational-approaches.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Computational approaches</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Approaches to Linguistics</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-premodern-linguistics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Pre-modern linguistics</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-historical-turn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The historical turn</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-european-structuralism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">European structuralism</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-american-structuralism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">American structuralism</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-generativism.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Generativism</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-universals-variation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Universals and variation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-meaning-function.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Meaning and function</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-computational-approaches.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Computational approaches</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-contemporary-linguistics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Linguistics in the 21st century</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">8.1</span> Introduction</a></li>
+  <li><a href="#why-computational-modelling" id="toc-why-computational-modelling" class="nav-link" data-scroll-target="#why-computational-modelling"><span class="header-section-number">8.2</span> Why computational modelling?</a></li>
+  <li><a href="#the-push-towards-language-modelling" id="toc-the-push-towards-language-modelling" class="nav-link" data-scroll-target="#the-push-towards-language-modelling"><span class="header-section-number">8.3</span> The push towards language modelling</a></li>
+  <li><a href="#philosophical-issues-in-computational-linguistics" id="toc-philosophical-issues-in-computational-linguistics" class="nav-link" data-scroll-target="#philosophical-issues-in-computational-linguistics"><span class="header-section-number">8.4</span> Philosophical issues in computational linguistics</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">8.5</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Computational approaches</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">8.1</span> Introduction</h2>
+<p>One of the more recent perspectives on language has viewed it as information. This treatment arose initially from the field of information theory <span class="citation" data-cites="shannonMathematicalTheoryCommunication1948">(<a href="references.html#ref-shannonMathematicalTheoryCommunication1948" role="doc-biblioref">Shannon, 1948</a>)</span>, which used a mathematical lens to view communication as a means of sending information from a sender to a receiver, subject to constraints on the communication system (e.g., its channel capacity or noise). More broadly, the application of computational approaches to linguistics has seen an exponential growth in interest in the last half-century, from early efforts in machine translation for military intelligence applications <span class="citation" data-cites="hutchinsRetrospectProspectComputerbased1999">(<a href="references.html#ref-hutchinsRetrospectProspectComputerbased1999" role="doc-biblioref">Hutchins, 1999</a>)</span> to recent sophisticated chatbots <span class="citation" data-cites="openaiIntroducingChatGPT2024">(<a href="references.html#ref-openaiIntroducingChatGPT2024" role="doc-biblioref">Open AI, 2024</a>)</span>. Much has been written elsewhere on the history of computational linguistics and natural language processing <span class="citation" data-cites="johriNaturalLanguageProcessing2021 jonesNaturalLanguageProcessing1994 schubertComputationalLinguistics2020">(e.g., <a href="references.html#ref-johriNaturalLanguageProcessing2021" role="doc-biblioref">Johri et al., 2021</a>; <a href="references.html#ref-jonesNaturalLanguageProcessing1994" role="doc-biblioref">K. S. Jones, 1994</a>; <a href="references.html#ref-schubertComputationalLinguistics2020" role="doc-biblioref">Schubert, 2020</a>)</span>; here we focus on surveying some theoretical and philosophical issues regarding such approaches.</p>
+</section>
+<section id="why-computational-modelling" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="why-computational-modelling"><span class="header-section-number">8.2</span> Why computational modelling?</h2>
+<p>Computational approaches afford a few particular advantages given the methods used to construct, fit, and employ computational models. The first is <em>formalisation</em>: since computational models require the operationalisation of constructs related to language, they require an explicit quantification of language how it is processed and/or acquired, rather than relying on verbal theory. Such formalisation is useful because it allows for the instantiation and evaluation of proposed mechanisms of language processing and acquisition, demonstrating how these mechanisms can (or cannot) explain the observed variation in actual human language. For example, computational models have been used to explain how humans handle communication in settings with noise or errors <span class="citation" data-cites="levyNoisyChannelModelHuman2008 gibsonRationalIntegrationNoisy2013">(<a href="references.html#ref-gibsonRationalIntegrationNoisy2013" role="doc-biblioref">Gibson et al., 2013</a>; <a href="references.html#ref-levyNoisyChannelModelHuman2008" role="doc-biblioref">Levy, 2008</a>)</span>, how children acquire regular and irregular past tense forms in English <span class="citation" data-cites="rumelhartLearningTensesEnglish1987 plunkettConnectionistModelEnglish1999">(<a href="references.html#ref-plunkettConnectionistModelEnglish1999" role="doc-biblioref">Plunkett &amp; Juola, 1999</a>; <a href="references.html#ref-rumelhartLearningTensesEnglish1987" role="doc-biblioref">Rumelhart &amp; McClelland, 1987</a>)</span>, and how unexpected words slow down reading speed <span class="citation" data-cites="ohTransformerBasedLanguageModel2023 wilcoxTestingPredictionsSurprisal2023">(<a href="references.html#ref-ohTransformerBasedLanguageModel2023" role="doc-biblioref">Oh &amp; Schuler, 2023</a>; <a href="references.html#ref-wilcoxTestingPredictionsSurprisal2023" role="doc-biblioref">Wilcox et al., 2023</a>)</span>. By investiating input–output correspondences in these computational models, linguisticians can validate theories of language use, but also conduct experiments that may not be possible on humans <span class="citation" data-cites="christiansenConnectionistModelRecursion1999">(e.g., controlled rearing studies, <a href="references.html#ref-christiansenConnectionistModelRecursion1999" role="doc-biblioref">Christiansen &amp; Chater, 1999</a>)</span>, or search through a larger parameter space for optimal experiment design <span class="citation" data-cites="huanOptimalExperimentalDesign2024">(<a href="references.html#ref-huanOptimalExperimentalDesign2024" role="doc-biblioref">Huan et al., 2024</a>)</span>.</p>
+<p>Another benefit of computational approaches is the ability to handle <em>large volumes of data</em>. Continued advancements in corpus collection has vastly increased the amount of available language data <span class="citation" data-cites="commoncrawlCommonCrawlOpen2025">(e.g., <a href="references.html#ref-commoncrawlCommonCrawlOpen2025" role="doc-biblioref">Common Crawl, 2025</a>)</span>, which would be intractable to manually annotate. The use of computational models allows for the automatic processing and annotation of such data <span class="citation" data-cites="qi2020stanza strakaUDPipeTrainablePipeline2016">(e.g., <a href="references.html#ref-qi2020stanza" role="doc-biblioref">Qi et al., 2020</a>; <a href="references.html#ref-strakaUDPipeTrainablePipeline2016" role="doc-biblioref">Straka et al., 2016</a>)</span>, permitting much larger-scale analyses and possibly the detection of lower-frequency constructions or phenomena with smaller effect sizes, which may not have otherwise appeared in smaller datasets <span class="citation" data-cites="rolandFrequencyBasicEnglish2007">(e.g., <a href="references.html#ref-rolandFrequencyBasicEnglish2007" role="doc-biblioref">Roland et al., 2007</a>)</span>.</p>
+<p>A third contribution of computational methods is that they can represent the <em>rich, high-dimensional nature of language</em>. One significant advance is the shift towards sub-symbolic representations of language, especially distributional semantics, which suggests that word meanings can be elucidated from the contexts in which that word appears <span class="citation" data-cites="firthSynopsisLinguisticTheory1957">(<a href="references.html#ref-firthSynopsisLinguisticTheory1957" role="doc-biblioref">Firth, 1957</a>)</span>. Hence, word meanings can be represented as vectors or embeddings, which capture statistical patterns of the contexts in which the word occurs <span class="citation" data-cites="mikolovEfficientEstimationWord2013">(e.g., <a href="references.html#ref-mikolovEfficientEstimationWord2013" role="doc-biblioref">Mikolov et al., 2013</a>)</span>; this approach stands in stark contrast with formal symbolic theories of semantics, in which it is difficult to express a comprehensive description of meaning that can account for the entire lexicon. The distributed representations of meanings allows them to be arbitrarily composed mathematically, and can also serve as numerical representations for other kinds of operations (including those in modern neural network models). Furthermore, embeddings appear to have properties which align with humans’ linguistic representations <span class="citation" data-cites="grandSemanticProjectionRecovers2022">(<a href="references.html#ref-grandSemanticProjectionRecovers2022" role="doc-biblioref">Grand et al., 2022</a>)</span>, suggesting that they do in fact capture relevant dimensions of variance in semantics. We can also probe the internal representations of language models to determine how much semantic information is accessible from purely linguistic information—for example, it is possible to read out human colour perceptions <span class="citation" data-cites="marjiehLargeLanguageModels2024">(<a href="references.html#ref-marjiehLargeLanguageModels2024" role="doc-biblioref">Marjieh et al., 2024</a>)</span> and cyclic representations of time <span class="citation" data-cites="engelsNotAllLanguage2024">(<a href="references.html#ref-engelsNotAllLanguage2024" role="doc-biblioref">Engels et al., 2024</a>)</span> as emergent properties of language model representations.</p>
+<p>Broadly, the quantitative nature of computational methods has enabled mechanistic, large-scale, robust, and sophisticated analyses of language that would be difficult to conduct otherwise. It is important to note that these characteristics may not apply to every computational approach—for example, modern language models are often difficult to interpret mechanistically <span class="citation" data-cites="raiPracticalReviewMechanistic2024">(but see <a href="references.html#ref-raiPracticalReviewMechanistic2024" role="doc-biblioref">Rai et al., 2024</a>)</span>. Nonetheless, these tools have provided us with new insights into the structure and usage of language.</p>
+</section>
+<section id="the-push-towards-language-modelling" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="the-push-towards-language-modelling"><span class="header-section-number">8.3</span> The push towards language modelling</h2>
+<p>We can also approach the question of computational linguistics from the opposite angle: What makes language a good target for computational approaches? Some possible responses are clear, including the fact that language is essential for human communication, and that it is ubiquitous and thus has a large quantity of potentially available data. There are several other features that make language learning an interesting problem for computational approaches. First, it appears to be effectively universal across humans (barring developmental difficulties), and learnt early and without much explicit instruction—recall that these are the same arguments initially used to support Universal Grammar. That language is so pervasive is a good indicator that progress in machine use of language would be very useful for many applications. On the other hand, language appears to be difficult to learn and represent from a formal perspective. For example, early research into machine translation quickly revealed that it is not as straightforward as had been assumed, particularly due to non-linearities in the information (e.g., hierarchical grammatical structure, differing categorisations of semantic space, and information structure); thus, early symbolic approaches were relatively limited in what they could accomplish <span class="citation" data-cites="weizenbaumELIZAComputerProgram1966">(e.g., <a href="references.html#ref-weizenbaumELIZAComputerProgram1966" role="doc-biblioref">Weizenbaum, 1966</a>)</span>. Hence, natural language processing has emerged as an important challenge task for computational approaches.</p>
+<p>Progress in language modelling has often been driven by difficult aspects of language representation and usage. For example, the streamed, linear format of language contrasts with the static, single-snapshot format of vision or other modalities of data; as such, handling complex time series information is necessary for language modelling, and drove early neural network approaches for handling dynamic data, including recursive neural networks <span class="citation" data-cites="costaIncrementalParsingNatural2003">(e.g., <a href="references.html#ref-costaIncrementalParsingNatural2003" role="doc-biblioref">Costa et al., 2003</a>)</span>. Language also exhibits long-distance dependencies (whether the narrowly-defined grammatical phenomenon, or more general informational dependencies), which was one of the impetuses for the development of attentional mechanisms, such that later words can “attend” more or less to earlier words depending on relevance <span class="citation" data-cites="vaswaniAttentionAllYou2023">(<a href="references.html#ref-vaswaniAttentionAllYou2023" role="doc-biblioref">Vaswani et al., 2023</a>)</span>. More recent approaches have also emphasised the importance of multimodal grounding in semantics and natural language understanding <span class="citation" data-cites="radfordLearningTransferableVisual2021">(<a href="references.html#ref-radfordLearningTransferableVisual2021" role="doc-biblioref">Radford et al., 2021</a>)</span>, as well as the distinction between truthfulness and usefulness in language use <span class="citation" data-cites="ouyangTrainingLanguageModels2022">(<a href="references.html#ref-ouyangTrainingLanguageModels2022" role="doc-biblioref">Ouyang et al., 2022</a>)</span>.</p>
+<p>Furthermore, the modelling of “language” in fact encompasses a very large range of phenomena and capacities. These phenomena include traditional topics in linguistic analyses, including grammatical parsing <span class="citation" data-cites="baiConstituencyParsingUsing2023 vinyalsGrammarForeignLanguage2015">(e.g., <a href="references.html#ref-baiConstituencyParsingUsing2023" role="doc-biblioref">Bai et al., 2023</a>; <a href="references.html#ref-vinyalsGrammarForeignLanguage2015" role="doc-biblioref">Vinyals et al., 2015</a>)</span>, reference resolution <span class="citation" data-cites="monizReALMReferenceResolution2024">(e.g., <a href="references.html#ref-monizReALMReferenceResolution2024" role="doc-biblioref">Moniz et al., 2024</a>)</span>, natural language inference <span class="citation" data-cites="gubelmannCapturingVarietiesNatural2024">(e.g., <a href="references.html#ref-gubelmannCapturingVarietiesNatural2024" role="doc-biblioref">Gubelmann et al., 2024</a>)</span>, language acquisition <span class="citation" data-cites="elmanLearningDevelopmentNeural1993 wangFindingStructureOne2023">(e.g., <a href="references.html#ref-elmanLearningDevelopmentNeural1993" role="doc-biblioref">Elman, 1993</a>; <a href="references.html#ref-wangFindingStructureOne2023" role="doc-biblioref">Wang et al., 2023</a>)</span>, and the distinction between formal and functional competence <span class="citation" data-cites="mahowaldDissociatingLanguageThought2024">(e.g., <a href="references.html#ref-mahowaldDissociatingLanguageThought2024" role="doc-biblioref">Mahowald et al., 2024</a>)</span>. Computational approaches to language have also addressed issues related to different modalities of language data, including speech recognition <span class="citation" data-cites="dahlContextdependentPretrainedDeep2012 radfordRobustSpeechRecognition2022">(e.g., <a href="references.html#ref-dahlContextdependentPretrainedDeep2012" role="doc-biblioref">Dahl et al., 2012</a>; <a href="references.html#ref-radfordRobustSpeechRecognition2022" role="doc-biblioref">Radford et al., 2022</a>)</span> and optical character recognition <span class="citation" data-cites="poznanskiOlmOCRUnlockingTrillions2025">(e.g., <a href="references.html#ref-poznanskiOlmOCRUnlockingTrillions2025" role="doc-biblioref">Poznanski et al., 2025</a>)</span>, or even further afield to decoding neural representations of language <span class="citation" data-cites="defossezDecodingSpeechPerception2023 hongScaleMattersLarge2024">(e.g., <a href="references.html#ref-defossezDecodingSpeechPerception2023" role="doc-biblioref">Défossez et al., 2023</a>; <a href="references.html#ref-hongScaleMattersLarge2024" role="doc-biblioref">Hong et al., 2024</a>)</span>. The diversity of potential target phenomena have driven a corresponding expansion in the methods and techniques employed under the broad umbrellas of computational linguistics and natural language processing, and continue to encourage innovation in contemporary computational approaches.</p>
+</section>
+<section id="philosophical-issues-in-computational-linguistics" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="philosophical-issues-in-computational-linguistics"><span class="header-section-number">8.4</span> Philosophical issues in computational linguistics</h2>
+<p>The computational modelling of language has always been associated with corresponding philosophical issues related to these models. Turing famously introduced the idea of the Turing test, which suggests that a machine can be considered intelligent if a human interrogator is unable to distinguish between it and another human <span class="citation" data-cites="turingComputerMachineryIntelligence1950">(<a href="references.html#ref-turingComputerMachineryIntelligence1950" role="doc-biblioref">Turing, 1950</a>)</span>. This test is also related to Searle’s Chinese room thought experiment <span class="citation" data-cites="searleMindsBrainsPrograms1980">(<a href="references.html#ref-searleMindsBrainsPrograms1980" role="doc-biblioref">Searle, 1980</a>)</span>, which (contra Turing) suggests that it is possible for a person in a room to follow a set of instructions for constructing appropriate responses to inputs given in Chinese, even if they do not understand Chinese themself. Hence, the Turing test is too crude to determine understanding. These arguments have been naturally extended to modern large language models (LLMs), which do exhibit language performance sophisticated enough to ostensibly pass some Turing tests <span class="citation" data-cites="jonesPeopleCannotDistinguish2024">(<a href="references.html#ref-jonesPeopleCannotDistinguish2024" role="doc-biblioref">C. R. Jones &amp; Bergen, 2024</a>)</span>.</p>
+<p>Linguisticians have taken up a very broad range of perspectives on the modern version of this debate—that is, whether LLMs can tell us anything about linguistics. Some researchers believe that they cannot, largely because the context in which LLMs learn and use language is qualitatively different from humans, who use different mechanisms for learning, have much less input data, and are embodied in a multisensory, social environment that drives true meaning-making <span class="citation" data-cites="benderDangersStochasticParrots2021 benderClimbingNLUMeaning2020 bolhuisThreeReasonsWhy2024 gomesWhitherDevelopmentalPsycholinguistics2024 kodnerWhyLinguisticsWill2023">(e.g., <a href="references.html#ref-benderDangersStochasticParrots2021" role="doc-biblioref">Bender et al., 2021</a>; <a href="references.html#ref-benderClimbingNLUMeaning2020" role="doc-biblioref">Bender &amp; Koller, 2020</a>; <a href="references.html#ref-bolhuisThreeReasonsWhy2024" role="doc-biblioref">Bolhuis et al., 2024</a>; <a href="references.html#ref-gomesWhitherDevelopmentalPsycholinguistics2024" role="doc-biblioref">Gomes, 2024</a>; <a href="references.html#ref-kodnerWhyLinguisticsWill2023" role="doc-biblioref">Kodner et al., 2023</a>)</span>. Under this view, the inherent differences between human and machine learning imply that language models cannot truly serve as effective models of language learning and use. However, a key under-addressed issue is the validity of the assumptions made—for example, do models in fact require human-like learning mechanisms in order to be effective models of language? Given that modern LLMs do show relatively sophisticated language behaviour, it seems plausible to posit that even “unnatural” learning mechanisms can extract meaningful structural features of language, such that these models remain interesting artifacts for investigation, especially since they permit analyses that would not be possible with humans.</p>
+<p>A much more bullish perspective on LLMs is that they can themselves serve as theories of language, which may even surpass traditional linguistic theories, since they provide more accurate predictions about language behaviour in humans <span class="citation" data-cites="baroniProperRoleLinguisticallyoriented2022 piantadosiModernLanguageModels2024">(e.g., <a href="references.html#ref-baroniProperRoleLinguisticallyoriented2022" role="doc-biblioref">Baroni, 2022</a>; <a href="references.html#ref-piantadosiModernLanguageModels2024" role="doc-biblioref">Piantadosi, 2024</a>)</span>. While LLMs do indeed have increasingly strong predictive power, they lack explanatory power, since they only provide descriptions either at a very high, abstract level (e.g., regarding phenomena), or at a very low, implementational level (e.g., regarding statistical learning), neither of which are useful in providing interpretable, analytical explanations of linguistic phenomena.</p>
+<p>In contrast with both of these more extreme perspectives, a growing group of researchers have laid out something of a <em>via media</em>: language models can serve as interesting ways to probe and evaluate linguistic theories, even if they do not serve as complete theories themselves <span class="citation" data-cites="binzHowShouldAdvancement2025 paterGenerativeLinguisticsNeural2019 portelanceRolesNeuralNetworks2024 milliereLanguageModelsModels2024 frankCognitiveModelingUsing2025 futrellHowLinguisticsLearned2025 mansfieldLookingForwardLinguistic2025">(e.g., <a href="references.html#ref-binzHowShouldAdvancement2025" role="doc-biblioref">Binz et al., 2025</a>; <a href="references.html#ref-frankCognitiveModelingUsing2025" role="doc-biblioref">Frank &amp; Goodman, 2025</a>; <a href="references.html#ref-futrellHowLinguisticsLearned2025" role="doc-biblioref">Futrell &amp; Mahowald, 2025</a>; <a href="references.html#ref-mansfieldLookingForwardLinguistic2025" role="doc-biblioref">Mansfield &amp; Wilcox, 2025</a>; <a href="references.html#ref-milliereLanguageModelsModels2024" role="doc-biblioref">Millière, 2024</a>; <a href="references.html#ref-paterGenerativeLinguisticsNeural2019" role="doc-biblioref">Pater, 2019</a>; <a href="references.html#ref-portelanceRolesNeuralNetworks2024" role="doc-biblioref">Portelance &amp; Jasbi, 2024</a>)</span>. Two ideas are key in this regard. The first is <em>representations</em>: probing the internal representations of LLMs allows us to understand what kinds of representations are able to support complex language behaviour. For example, language models appear to encode hierarchical syntactic information <span class="citation" data-cites="rogersPrimerBERTologyWhat2020">(<a href="references.html#ref-rogersPrimerBERTologyWhat2020" role="doc-biblioref">Rogers et al., 2020</a>)</span> as well as syntactic relations <span class="citation" data-cites="diego-simonPolarCoordinateSystem2024">(<a href="references.html#ref-diego-simonPolarCoordinateSystem2024" role="doc-biblioref">Diego-Simón et al., 2024</a>)</span>, suggesting that such representations are important for appropriate language production, as opposed to merely operating over linear positional features. Another key idea is <em>learnability</em>: understanding what can be acquired by language models reflects the inductive biases that may or may not be necessary for language learning in humans. A recent line of work has demonstrated that actual human languages are easier for LLMs to learn than implausible languages <span class="citation" data-cites="kalliniMissionImpossibleLanguage2024 yangAnythingGoesCrosslinguistic2025 xuCanLanguageModels2025">(e.g., with inconsistent word order; <a href="references.html#ref-kalliniMissionImpossibleLanguage2024" role="doc-biblioref">Kallini et al., 2024</a>; <a href="references.html#ref-xuCanLanguageModels2025" role="doc-biblioref">Xu et al., 2025</a>; <a href="references.html#ref-yangAnythingGoesCrosslinguistic2025" role="doc-biblioref">Yang et al., 2025</a>)</span>, refuting the supposition that language models are able to learn any arbitrary language <span class="citation" data-cites="moroLargeLanguagesImpossible2023">(<a href="references.html#ref-moroLargeLanguagesImpossible2023" role="doc-biblioref">Moro et al., 2023</a>)</span>, and conversely suggesting that structural regularities in the input are crucial for a language to be learnable—even for learning algorithms like statistical learning. This moderate perspective draws connections among symbolic linguistic theory, information theory, and language modelling, allowing for more multifaceted approaches toward understanding language.</p>
+</section>
+<section id="conclusion" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">8.5</span> Conclusion</h2>
+<p>Computational approaches have received a lot of attention in recent years, and much debate continues on their application and implications for linguistics. Nonetheless, it is exciting that these approaches have permitted many analyses which were hitherto impossible, and it will be interesting to observe how this young field continues to develop and mature over time, through both technical and methodological improvements, as well as continued theoretical and philosophical discussion.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-baiConstituencyParsingUsing2023" class="csl-entry" role="listitem">
+Bai, X., Wu, J., Chen, Y., Wang, Z., &amp; Zhang, Y. (2023, October 31). <em>Constituency <span>Parsing</span> using <span>LLMs</span></em>. <a href="https://doi.org/10.48550/arXiv.2310.19462">https://doi.org/10.48550/arXiv.2310.19462</a>
+</div>
+<div id="ref-baroniProperRoleLinguisticallyoriented2022" class="csl-entry" role="listitem">
+Baroni, M. (2022, March 24). <em>On the proper role of linguistically-oriented deep net analysis in linguistic theorizing</em>. <a href="https://doi.org/10.48550/arXiv.2106.08694">https://doi.org/10.48550/arXiv.2106.08694</a>
+</div>
+<div id="ref-benderDangersStochasticParrots2021" class="csl-entry" role="listitem">
+Bender, E. M., Gebru, T., McMillan-Major, A., &amp; Shmitchell, S. (2021). On the <span>Dangers</span> of <span>Stochastic Parrots</span>: <span>Can Language Models Be Too Big</span>? 🦜. <em>Proceedings of the 2021 <span>ACM Conference</span> on <span>Fairness</span>, <span>Accountability</span>, and <span>Transparency</span></em>, 610–623. <a href="https://doi.org/10.1145/3442188.3445922">https://doi.org/10.1145/3442188.3445922</a>
+</div>
+<div id="ref-benderClimbingNLUMeaning2020" class="csl-entry" role="listitem">
+Bender, E. M., &amp; Koller, A. (2020). Climbing towards <span>NLU</span>: <span>On Meaning</span>, <span>Form</span>, and <span>Understanding</span> in the <span>Age</span> of <span>Data</span>. In D. Jurafsky, J. Chai, N. Schluter, &amp; J. Tetreault (Eds.), <em>Proceedings of the 58th <span>Annual Meeting</span> of the <span>Association</span> for <span>Computational Linguistics</span></em> (pp. 5185–5198). Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/2020.acl-main.463">https://doi.org/10.18653/v1/2020.acl-main.463</a>
+</div>
+<div id="ref-binzHowShouldAdvancement2025" class="csl-entry" role="listitem">
+Binz, M., Alaniz, S., Roskies, A., Aczel, B., Bergstrom, C. T., Allen, C., Schad, D., Wulff, D., West, J. D., Zhang, Q., Shiffrin, R. M., Gershman, S. J., Popov, V., Bender, E. M., Marelli, M., Botvinick, M. M., Akata, Z., &amp; Schulz, E. (2025). How should the advancement of large language models affect the practice of science? <em>Proceedings of the National Academy of Sciences</em>, <em>122</em>(5), e2401227121. <a href="https://doi.org/10.1073/pnas.2401227121">https://doi.org/10.1073/pnas.2401227121</a>
+</div>
+<div id="ref-bolhuisThreeReasonsWhy2024" class="csl-entry" role="listitem">
+Bolhuis, J. J., Crain, S., Fong, S., &amp; Moro, A. (2024). Three reasons why <span>AI</span> doesn’t model human language. <em>Nature</em>, <em>627</em>(8004), 489–489. <a href="https://doi.org/10.1038/d41586-024-00824-z">https://doi.org/10.1038/d41586-024-00824-z</a>
+</div>
+<div id="ref-christiansenConnectionistModelRecursion1999" class="csl-entry" role="listitem">
+Christiansen, M. H., &amp; Chater, N. (1999). Toward a <span>Connectionist Model</span> of <span>Recursion</span> in <span>Human Linguistic Performance</span>. <em>Cognitive Science</em>, <em>23</em>(2), 157–205. <a href="https://doi.org/10.1207/s15516709cog2302_2">https://doi.org/10.1207/s15516709cog2302_2</a>
+</div>
+<div id="ref-commoncrawlCommonCrawlOpen2025" class="csl-entry" role="listitem">
+Common Crawl. (2025). <em>Common <span>Crawl</span> - <span>Open Repository</span> of <span>Web Crawl Data</span></em> [Dataset]. <a href="https://commoncrawl.org/">https://commoncrawl.org/</a>
+</div>
+<div id="ref-costaIncrementalParsingNatural2003" class="csl-entry" role="listitem">
+Costa, F., Frasconi, P., Lombardo, V., &amp; Soda, G. (2003). Towards <span>Incremental Parsing</span> of <span>Natural Language Using Recursive Neural Networks</span>. <em>Applied Intelligence</em>, <em>19</em>(1), 9–25. <a href="https://doi.org/10.1023/A:1023860521975">https://doi.org/10.1023/A:1023860521975</a>
+</div>
+<div id="ref-dahlContextdependentPretrainedDeep2012" class="csl-entry" role="listitem">
+Dahl, G. E., Yu, D., Deng, L., &amp; Acero, A. (2012). Context-dependent pre-trained deep neural networks for large-vocabulary speech recognition. <em>IEEE Transactions on Audio, Speech, and Language Processing</em>, <em>20</em>(1), 30–42.
+</div>
+<div id="ref-defossezDecodingSpeechPerception2023" class="csl-entry" role="listitem">
+Défossez, A., Caucheteux, C., Rapin, J., Kabeli, O., &amp; King, J.-R. (2023). Decoding speech perception from non-invasive brain recordings. <em>Nature Machine Intelligence</em>, <em>5</em>(10), 1097–1107. <a href="https://doi.org/10.1038/s42256-023-00714-5">https://doi.org/10.1038/s42256-023-00714-5</a>
+</div>
+<div id="ref-diego-simonPolarCoordinateSystem2024" class="csl-entry" role="listitem">
+Diego-Simón, P., D’Ascoli, S., Chemla, E., Lakretz, Y., &amp; King, J.-R. (2024, December 7). <em>A polar coordinate system represents syntax in large language models</em>. <a href="https://doi.org/10.48550/arXiv.2412.05571">https://doi.org/10.48550/arXiv.2412.05571</a>
+</div>
+<div id="ref-elmanLearningDevelopmentNeural1993" class="csl-entry" role="listitem">
+Elman, J. L. (1993). Learning and development in neural networks: <span>The</span> importance of starting small. <em>Cognition</em>, <em>48</em>(1), 71–99.
+</div>
+<div id="ref-engelsNotAllLanguage2024" class="csl-entry" role="listitem">
+Engels, J., Liao, I., Michaud, E. J., Gurnee, W., &amp; Tegmark, M. (2024, May 23). <em>Not <span>All Language Model Features Are Linear</span></em>. <a href="https://doi.org/10.48550/arXiv.2405.14860">https://doi.org/10.48550/arXiv.2405.14860</a>
+</div>
+<div id="ref-firthSynopsisLinguisticTheory1957" class="csl-entry" role="listitem">
+Firth, J. R. (1957). A synopsis of linguistic theory 1930–1955. In <em>Studies in <span>Linguistic Analysis</span></em> (pp. 1–32). Blackwell.
+</div>
+<div id="ref-frankCognitiveModelingUsing2025" class="csl-entry" role="listitem">
+Frank, M. C., &amp; Goodman. (2025, March 6). <em>Cognitive modeling using artificial intelligence</em>. <a href="https://doi.org/10.31234/osf.io/wv7mg_v1">https://doi.org/10.31234/osf.io/wv7mg_v1</a>
+</div>
+<div id="ref-futrellHowLinguisticsLearned2025" class="csl-entry" role="listitem">
+Futrell, R., &amp; Mahowald, K. (2025, January 28). <em>How <span>Linguistics Learned</span> to <span>Stop Worrying</span> and <span>Love</span> the <span>Language Models</span></em>. <a href="https://doi.org/10.48550/arXiv.2501.17047">https://doi.org/10.48550/arXiv.2501.17047</a>
+</div>
+<div id="ref-gibsonRationalIntegrationNoisy2013" class="csl-entry" role="listitem">
+Gibson, E., Bergen, L., &amp; Piantadosi, S. T. (2013). Rational integration of noisy evidence and prior semantic expectations in sentence interpretation. <em>Proceedings of the National Academy of Sciences</em>, <em>110</em>(20), 8051–8056. <a href="https://doi.org/10.1073/pnas.1216438110">https://doi.org/10.1073/pnas.1216438110</a>
+</div>
+<div id="ref-gomesWhitherDevelopmentalPsycholinguistics2024" class="csl-entry" role="listitem">
+Gomes, V. (2024). Whither developmental psycholinguistics? <em>Language Development Research</em>, <em>5</em>(1, 1). <a href="https://doi.org/10.34842/gomesllm">https://doi.org/10.34842/gomesllm</a>
+</div>
+<div id="ref-grandSemanticProjectionRecovers2022" class="csl-entry" role="listitem">
+Grand, G., Blank, I. A., Pereira, F., &amp; Fedorenko, E. (2022). Semantic projection recovers rich human knowledge of multiple object features from word embeddings. <em>Nature Human Behaviour</em>, <em>6</em>(7), 975–987. <a href="https://doi.org/10.1038/s41562-022-01316-8">https://doi.org/10.1038/s41562-022-01316-8</a>
+</div>
+<div id="ref-gubelmannCapturingVarietiesNatural2024" class="csl-entry" role="listitem">
+Gubelmann, R., Katis, I., Niklaus, C., &amp; Handschuh, S. (2024). Capturing the <span>Varieties</span> of <span>Natural Language Inference</span>: <span>A Systematic Survey</span> of <span>Existing Datasets</span> and <span>Two Novel Benchmarks</span>. <em>Journal of Logic, Language and Information</em>, <em>33</em>(1), 21–48. <a href="https://doi.org/10.1007/s10849-023-09410-4">https://doi.org/10.1007/s10849-023-09410-4</a>
+</div>
+<div id="ref-hongScaleMattersLarge2024" class="csl-entry" role="listitem">
+Hong, Z., Wang, H., Zada, Z., Gazula, H., Turner, D., Aubrey, B., Niekerken, L., Doyle, W., Devore, S., Dugan, P., Friedman, D., Devinsky, O., Flinker, A., Hasson, U., Nastase, S. A., &amp; Goldstein, A. (2024). Scale matters: <span>Large</span> language models with billions (rather than millions) of parameters better match neural representations of natural language. <em>eLife</em>, <em>13</em>. <a href="https://doi.org/10.7554/eLife.101204.1">https://doi.org/10.7554/eLife.101204.1</a>
+</div>
+<div id="ref-huanOptimalExperimentalDesign2024" class="csl-entry" role="listitem">
+Huan, X., Jagalur, J., &amp; Marzouk, Y. (2024). Optimal experimental design: <span>Formulations</span> and computations. <em>Acta Numerica</em>, <em>33</em>, 715–840. <a href="https://doi.org/10.1017/S0962492924000023">https://doi.org/10.1017/S0962492924000023</a>
+</div>
+<div id="ref-hutchinsRetrospectProspectComputerbased1999" class="csl-entry" role="listitem">
+Hutchins, J. (1999). Retrospect and prospect in computer-based translation. <em>Proceedings of <span>MT</span> Summit <span>VII</span></em>, 30–44.
+</div>
+<div id="ref-johriNaturalLanguageProcessing2021" class="csl-entry" role="listitem">
+Johri, P., Khatri, S. K., Al-Taani, A. T., Sabharwal, M., Suvanov, S., &amp; Kumar, A. (2021). Natural <span>Language Processing</span>: <span>History</span>, <span>Evolution</span>, <span>Application</span>, and <span>Future Work</span>. In A. Abraham, O. Castillo, &amp; D. Virmani (Eds.), <em>Proceedings of 3rd <span>International Conference</span> on <span>Computing Informatics</span> and <span>Networks</span></em> (pp. 365–375). Springer. <a href="https://doi.org/10.1007/978-981-15-9712-1_31">https://doi.org/10.1007/978-981-15-9712-1_31</a>
+</div>
+<div id="ref-jonesPeopleCannotDistinguish2024" class="csl-entry" role="listitem">
+Jones, C. R., &amp; Bergen, B. K. (2024, May 9). <em>People cannot distinguish <span>GPT-4</span> from a human in a <span>Turing</span> test</em>. <a href="https://doi.org/10.48550/arXiv.2405.08007">https://doi.org/10.48550/arXiv.2405.08007</a>
+</div>
+<div id="ref-jonesNaturalLanguageProcessing1994" class="csl-entry" role="listitem">
+Jones, K. S. (1994). Natural <span>Language Processing</span>: <span>A Historical Review</span>. In A. Zampolli, N. Calzolari, &amp; M. Palmer (Eds.), <em>Current <span>Issues</span> in <span>Computational Linguistics</span>: <span>In Honour</span> of <span>Don Walker</span></em> (pp. 3–16). Springer Netherlands. <a href="https://doi.org/10.1007/978-0-585-35958-8_1">https://doi.org/10.1007/978-0-585-35958-8_1</a>
+</div>
+<div id="ref-kalliniMissionImpossibleLanguage2024" class="csl-entry" role="listitem">
+Kallini, J., Papadimitriou, I., Futrell, R., Mahowald, K., &amp; Potts, C. (2024, August 2). <em>Mission: <span>Impossible Language Models</span></em>. <a href="https://doi.org/10.48550/arXiv.2401.06416">https://doi.org/10.48550/arXiv.2401.06416</a>
+</div>
+<div id="ref-kodnerWhyLinguisticsWill2023" class="csl-entry" role="listitem">
+Kodner, J., Payne, S., &amp; Heinz, J. (2023, September). <em>Why <span>Linguistics Will Thrive</span> in the 21st <span>Century</span>: <span>A Reply</span> to <span>Piantadosi</span> (2023)</em>. <a href="https://ling.auf.net/lingbuzz/007485">https://ling.auf.net/lingbuzz/007485</a>
+</div>
+<div id="ref-levyNoisyChannelModelHuman2008" class="csl-entry" role="listitem">
+Levy, R. (2008). A <span>Noisy-Channel Model</span> of <span>Human Sentence Comprehension</span> under <span>Uncertain Input</span>. In M. Lapata &amp; H. T. Ng (Eds.), <em>Proceedings of the 2008 <span>Conference</span> on <span>Empirical Methods</span> in <span>Natural Language Processing</span></em> (pp. 234–243). Association for Computational Linguistics. <a href="https://aclanthology.org/D08-1025/">https://aclanthology.org/D08-1025/</a>
+</div>
+<div id="ref-mahowaldDissociatingLanguageThought2024" class="csl-entry" role="listitem">
+Mahowald, K., Ivanova, A. A., Blank, I. A., Kanwisher, N., Tenenbaum, J. B., &amp; Fedorenko, E. (2024). Dissociating language and thought in large language models. <em>Trends in Cognitive Sciences</em>, <em>28</em>(6), 517–540. <a href="https://doi.org/10.1016/j.tics.2024.01.011">https://doi.org/10.1016/j.tics.2024.01.011</a>
+</div>
+<div id="ref-mansfieldLookingForwardLinguistic2025" class="csl-entry" role="listitem">
+Mansfield, J., &amp; Wilcox, E. G. (2025, February 25). <em>Looking forward: <span>Linguistic</span> theory and methods</em>. <a href="https://doi.org/10.48550/arXiv.2502.18313">https://doi.org/10.48550/arXiv.2502.18313</a>
+</div>
+<div id="ref-marjiehLargeLanguageModels2024" class="csl-entry" role="listitem">
+Marjieh, R., Sucholutsky, I., van Rijn, P., Jacoby, N., &amp; Griffiths, T. L. (2024). Large language models predict human sensory judgments across six modalities. <em>Scientific Reports</em>, <em>14</em>(1), 21445. <a href="https://doi.org/10.1038/s41598-024-72071-1">https://doi.org/10.1038/s41598-024-72071-1</a>
+</div>
+<div id="ref-mikolovEfficientEstimationWord2013" class="csl-entry" role="listitem">
+Mikolov, T., Chen, K., Corrado, G., &amp; Dean, J. (2013, September 7). <em>Efficient <span>Estimation</span> of <span>Word Representations</span> in <span>Vector Space</span></em>. <a href="https://doi.org/10.48550/arXiv.1301.3781">https://doi.org/10.48550/arXiv.1301.3781</a>
+</div>
+<div id="ref-milliereLanguageModelsModels2024" class="csl-entry" role="listitem">
+Millière, R. (2024, August 13). <em>Language <span>Models</span> as <span>Models</span> of <span>Language</span></em>. <a href="https://doi.org/10.48550/arXiv.2408.07144">https://doi.org/10.48550/arXiv.2408.07144</a>
+</div>
+<div id="ref-monizReALMReferenceResolution2024" class="csl-entry" role="listitem">
+Moniz, J. R. A., Krishnan, S., Ozyildirim, M., Saraf, P., Ates, H. C., Zhang, Y., &amp; Yu, H. (2024, August 19). <em><span>ReALM</span>: <span>Reference Resolution As Language Modeling</span></em>. <a href="https://doi.org/10.48550/arXiv.2403.20329">https://doi.org/10.48550/arXiv.2403.20329</a>
+</div>
+<div id="ref-moroLargeLanguagesImpossible2023" class="csl-entry" role="listitem">
+Moro, A., Greco, M., &amp; Cappa, S. F. (2023). Large languages, impossible languages and human brains. <em>Cortex</em>, <em>167</em>, 82–85. <a href="https://doi.org/10.1016/j.cortex.2023.07.003">https://doi.org/10.1016/j.cortex.2023.07.003</a>
+</div>
+<div id="ref-ohTransformerBasedLanguageModel2023" class="csl-entry" role="listitem">
+Oh, B.-D., &amp; Schuler, W. (2023). Transformer-<span>Based Language Model Surprisal Predicts Human Reading Times Best</span> with <span>About Two Billion Training Tokens</span>. In H. Bouamor, J. Pino, &amp; K. Bali (Eds.), <em>Findings of the <span>Association</span> for <span>Computational Linguistics</span>: <span>EMNLP</span> 2023</em> (pp. 1915–1921). Association for Computational Linguistics. <a href="https://doi.org/10.18653/v1/2023.findings-emnlp.128">https://doi.org/10.18653/v1/2023.findings-emnlp.128</a>
+</div>
+<div id="ref-openaiIntroducingChatGPT2024" class="csl-entry" role="listitem">
+Open AI. (2024, March 13). <em>Introducing <span>ChatGPT</span></em>. <a href="https://openai.com/index/chatgpt/">https://openai.com/index/chatgpt/</a>
+</div>
+<div id="ref-ouyangTrainingLanguageModels2022" class="csl-entry" role="listitem">
+Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C. L., Mishkin, P., Zhang, C., Agarwal, S., Slama, K., Ray, A., Schulman, J., Hilton, J., Kelton, F., Miller, L., Simens, M., Askell, A., Welinder, P., Christiano, P., Leike, J., &amp; Lowe, R. (2022, March 4). <em>Training language models to follow instructions with human feedback</em>. <a href="https://doi.org/10.48550/arXiv.2203.02155">https://doi.org/10.48550/arXiv.2203.02155</a>
+</div>
+<div id="ref-paterGenerativeLinguisticsNeural2019" class="csl-entry" role="listitem">
+Pater, J. (2019). Generative linguistics and neural networks at 60: <span>Foundation</span>, friction, and fusion. <em>Language</em>, <em>95</em>(1), e41–e74. <a href="https://muse.jhu.edu/pub/24/article/719231">https://muse.jhu.edu/pub/24/article/719231</a>
+</div>
+<div id="ref-piantadosiModernLanguageModels2024" class="csl-entry" role="listitem">
+Piantadosi, S. (2024). Modern language models refute <span>Chomsky</span>’s approach to language. In E. Gibson &amp; M. Poliak (Eds.), <em>From fieldwork to linguistic theory: <span>A</span> tribute to <span>Dan Everett</span></em> (pp. 353–414). Language Science Press. <a href="https://lingbuzz.net/lingbuzz/007180">https://lingbuzz.net/lingbuzz/007180</a>
+</div>
+<div id="ref-plunkettConnectionistModelEnglish1999" class="csl-entry" role="listitem">
+Plunkett, K., &amp; Juola, P. (1999). A connectionist model of <span>English</span> past tense and plural morphology. <em>Cognitive Science</em>, <em>23</em>(4), 463–490. <a href="https://doi.org/10.1016/S0364-0213(99)00012-9">https://doi.org/10.1016/S0364-0213(99)00012-9</a>
+</div>
+<div id="ref-portelanceRolesNeuralNetworks2024" class="csl-entry" role="listitem">
+Portelance, E., &amp; Jasbi, M. (2024). The <span>Roles</span> of <span>Neural Networks</span> in <span>Language Acquisition</span>. <em>Language and Linguistics Compass</em>, <em>18</em>(6), e70001. <a href="https://doi.org/10.1111/lnc3.70001">https://doi.org/10.1111/lnc3.70001</a>
+</div>
+<div id="ref-poznanskiOlmOCRUnlockingTrillions2025" class="csl-entry" role="listitem">
+Poznanski, J., Borchardt, J., Dunkelberger, J., Huff, R., Lin, D., Rangapur, A., Wilhelm, C., Lo, K., &amp; Soldaini, L. (2025, February 25). <em><span class="nocase">olmOCR</span>: <span>Unlocking Trillions</span> of <span>Tokens</span> in <span>PDFs</span> with <span>Vision Language Models</span></em>. <a href="https://doi.org/10.48550/arXiv.2502.18443">https://doi.org/10.48550/arXiv.2502.18443</a>
+</div>
+<div id="ref-qi2020stanza" class="csl-entry" role="listitem">
+Qi, P., Zhang, Y., Zhang, Y., Bolton, J., &amp; Manning, C. D. (2020). Stanza: <span>A Python</span> natural language processing toolkit for many human languages. <em>Proceedings of the 58th <span>Annual Meeting</span> of the <span>Association</span> for <span>Computational Linguistics</span>: <span>System Demonstrations</span></em>. Annual <span>Meeting</span> of the <span>Association</span> for <span>Computational Linguistics</span>. <a href="https://nlp.stanford.edu/pubs/qi2020stanza.pdf">https://nlp.stanford.edu/pubs/qi2020stanza.pdf</a>
+</div>
+<div id="ref-radfordLearningTransferableVisual2021" class="csl-entry" role="listitem">
+Radford, A., Kim, J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G., Askell, A., Mishkin, P., Clark, J., Krueger, G., &amp; Sutskever, I. (2021, February 26). <em>Learning <span>Transferable Visual Models From Natural Language Supervision</span></em>. <a href="https://doi.org/10.48550/arXiv.2103.00020">https://doi.org/10.48550/arXiv.2103.00020</a>
+</div>
+<div id="ref-radfordRobustSpeechRecognition2022" class="csl-entry" role="listitem">
+Radford, A., Kim, J. W., Xu, T., Brockman, G., McLeavey, C., &amp; Sutskever, I. (2022, December 6). <em>Robust <span>Speech Recognition</span> via <span>Large-Scale Weak Supervision</span></em>. <a href="https://doi.org/10.48550/arXiv.2212.04356">https://doi.org/10.48550/arXiv.2212.04356</a>
+</div>
+<div id="ref-raiPracticalReviewMechanistic2024" class="csl-entry" role="listitem">
+Rai, D., Zhou, Y., Feng, S., Saparov, A., &amp; Yao, Z. (2024, July 2). <em>A <span>Practical Review</span> of <span>Mechanistic Interpretability</span> for <span>Transformer-Based Language Models</span></em>. <a href="https://doi.org/10.48550/arXiv.2407.02646">https://doi.org/10.48550/arXiv.2407.02646</a>
+</div>
+<div id="ref-rogersPrimerBERTologyWhat2020" class="csl-entry" role="listitem">
+Rogers, A., Kovaleva, O., &amp; Rumshisky, A. (2020). A <span>Primer</span> in <span>BERTology</span>: <span>What We Know About How BERT Works</span>. <em>Transactions of the Association for Computational Linguistics</em>, <em>8</em>, 842–866. <a href="https://doi.org/10.1162/tacl_a_00349">https://doi.org/10.1162/tacl_a_00349</a>
+</div>
+<div id="ref-rolandFrequencyBasicEnglish2007" class="csl-entry" role="listitem">
+Roland, D., Dick, F., &amp; Elman, J. L. (2007). Frequency of <span>Basic English Grammatical Structures</span>: <span>A Corpus Analysis</span>. <em>Journal of Memory and Language</em>, <em>57</em>(3), 348–379. <a href="https://doi.org/10.1016/j.jml.2007.03.002">https://doi.org/10.1016/j.jml.2007.03.002</a>
+</div>
+<div id="ref-rumelhartLearningTensesEnglish1987" class="csl-entry" role="listitem">
+Rumelhart, D. E., &amp; McClelland, J. L. (1987). Learning the past tenses of <span>English</span> verbs: <span>Implicit</span> rules or parallel distributed processing? In <em>Mechanisms of language aquisition.</em> (pp. 195–248). Lawrence Erlbaum Associates, Inc.
+</div>
+<div id="ref-schubertComputationalLinguistics2020" class="csl-entry" role="listitem">
+Schubert, L. (2020). Computational <span>Linguistics</span>. In E. N. Zalta (Ed.), <em>The <span>Stanford Encyclopedia</span> of <span>Philosophy</span></em> (Spring 2020). Metaphysics Research Lab, Stanford University. <a href="https://plato.stanford.edu/archives/spr2020/entries/computational-linguistics/">https://plato.stanford.edu/archives/spr2020/entries/computational-linguistics/</a>
+</div>
+<div id="ref-searleMindsBrainsPrograms1980" class="csl-entry" role="listitem">
+Searle, J. R. (1980). Minds, brains, and programs. <em>Behavioral and Brain Sciences</em>, <em>3</em>(3), 417–424. <a href="https://doi.org/10.1017/S0140525X00005756">https://doi.org/10.1017/S0140525X00005756</a>
+</div>
+<div id="ref-shannonMathematicalTheoryCommunication1948" class="csl-entry" role="listitem">
+Shannon, C. E. (1948). A <span>Mathematical Theory</span> of <span>Communication</span>. <em>The Bell System Technical Journal</em>, <em>27</em>, 379–423. <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x">https://doi.org/10.1002/j.1538-7305.1948.tb01338.x</a>
+</div>
+<div id="ref-strakaUDPipeTrainablePipeline2016" class="csl-entry" role="listitem">
+Straka, M., Hajič, J., &amp; Straková, J. (2016). <span>UDPipe</span>: <span>Trainable Pipeline</span> for <span>Processing CoNLL-U Files Performing Tokenization</span>, <span>Morphological Analysis</span>, <span>POS Tagging</span> and <span>Parsing</span>. In N. Calzolari, K. Choukri, T. Declerck, S. Goggi, M. Grobelnik, B. Maegaard, J. Mariani, H. Mazo, A. Moreno, J. Odijk, &amp; S. Piperidis (Eds.), <em>Proceedings of the <span>Tenth International Conference</span> on <span>Language Resources</span> and <span>Evaluation</span> (<span>LREC</span> ’16)</em> (pp. 4290–4297). European Language Resources Association (ELRA). <a href="https://aclanthology.org/L16-1680/">https://aclanthology.org/L16-1680/</a>
+</div>
+<div id="ref-turingComputerMachineryIntelligence1950" class="csl-entry" role="listitem">
+Turing, A. (1950). Computer machinery and intelligence. <em>Mind; a Quarterly Review of Psychology and Philosophy</em>, <em>59</em>(236), 433–460.
+</div>
+<div id="ref-vaswaniAttentionAllYou2023" class="csl-entry" role="listitem">
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., &amp; Polosukhin, I. (2023, August 2). <em>Attention <span>Is All You Need</span></em>. <a href="https://doi.org/10.48550/arXiv.1706.03762">https://doi.org/10.48550/arXiv.1706.03762</a>
+</div>
+<div id="ref-vinyalsGrammarForeignLanguage2015" class="csl-entry" role="listitem">
+Vinyals, O., Kaiser, L., Koo, T., Petrov, S., Sutskever, I., &amp; Hinton, G. (2015). Grammar as a foreign language. <em>Proceedings of the Conference on Neural Information Processing Systems 2015</em>.
+</div>
+<div id="ref-wangFindingStructureOne2023" class="csl-entry" role="listitem">
+Wang, W., Vong, W. K., Kim, N., &amp; Lake, B. M. (2023). Finding <span>Structure</span> in <span>One Child</span>’s <span>Linguistic Experience</span>. <em>Cognitive Science</em>, <em>47</em>(6), e13305. <a href="https://doi.org/10.1111/cogs.13305">https://doi.org/10.1111/cogs.13305</a>
+</div>
+<div id="ref-weizenbaumELIZAComputerProgram1966" class="csl-entry" role="listitem">
+Weizenbaum, J. (1966). <span>ELIZA</span>: <span>A</span> computer program for the study of natural language communication between man and machine. <em>Communications of the ACM</em>, <em>9</em>(1), 36–45.
+</div>
+<div id="ref-wilcoxTestingPredictionsSurprisal2023" class="csl-entry" role="listitem">
+Wilcox, E. G., Pimentel, T., Meister, C., Cotterell, R., &amp; Levy, R. P. (2023). Testing the <span>Predictions</span> of <span>Surprisal Theory</span> in 11 <span>Languages</span>. <em>Transactions of the Association for Computational Linguistics</em>, <em>11</em>, 1451–1470. <a href="https://doi.org/10.1162/tacl_a_00612">https://doi.org/10.1162/tacl_a_00612</a>
+</div>
+<div id="ref-xuCanLanguageModels2025" class="csl-entry" role="listitem">
+Xu, T., Kuribayashi, T., Oseki, Y., Cotterell, R., &amp; Warstadt, A. (2025, February 17). <em>Can <span>Language Models Learn Typologically Implausible Languages</span>?</em> <a href="https://doi.org/10.48550/arXiv.2502.12317">https://doi.org/10.48550/arXiv.2502.12317</a>
+</div>
+<div id="ref-yangAnythingGoesCrosslinguistic2025" class="csl-entry" role="listitem">
+Yang, X., Aoyama, T., Yao, Y., &amp; Wilcox, E. (2025, February 26). <em>Anything <span>Goes</span>? <span>A Crosslinguistic Study</span> of (<span>Im</span>)possible <span>Language Learning</span> in <span>LMs</span></em>. <a href="https://doi.org/10.48550/arXiv.2502.18795">https://doi.org/10.48550/arXiv.2502.18795</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./07-meaning-function.html" class="pagination-link" aria-label="Meaning and function">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Meaning and function</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./09-contemporary-linguistics.html" class="pagination-link" aria-label="Linguistics in the 21st century">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Linguistics in the 21st century</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
