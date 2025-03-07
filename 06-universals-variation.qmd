@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The school of generativism adopted a largely rationalist approach to language, basing its concepts and theories on arguments from reason (e.g., the poverty of the stimulus argument leading to the positing of an innate language acquisition device). On the other hand, other fields of linguistic inquiry in the mid-twentieth century adopted a more empiricist approach, focusing on generalisations and conclusions drawn from observed data [@markieRationalismVsEmpiricism2017]. Two such fields that emerged during this period are typology and (variationist) sociolinguistics, and their contributions to linguistics can be understood in terms of how they handled the related concepts of universals and variation.
+The school of generativism adopted a largely rationalist approach to language, basing its concepts and theories on arguments from reason (e.g., the poverty of the stimulus argument leading to the positing of an innate language acquisition device). On the other hand, other fields of linguistic inquiry in the mid-twentieth century adopted a more empiricist approach, focusing on generalisations and conclusions drawn from observed data [@markieRationalismVsEmpiricism2023]. Two such fields that emerged during this period are typology and (variationist) sociolinguistics, and their contributions to linguistics can be understood in terms of how they handled the related concepts of universals and variation.
 
 ## Typology: Characterising cross-linguistic variation
 
