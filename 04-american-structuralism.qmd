@@ -24,8 +24,8 @@ Another consequence of the view that language is part of culture is the characte
 
 Extrapolating the difference between items and arrangements, @bloomfieldLanguage1933 distinguished between lexical form and grammatical arrangement, reiterating the primacy of the sentence. He further described a novel conceptual system that would encompass phonology, morphosyntax, and even some aspects of semantics and pragmatics:
 
-  | Level | Lexical | Grammatical |
-  |-------|---------|-------------|
+  | | | Lexical | Grammatical |
+  |----|----|---------|-------------|
   | Smallest unit of linguistic signalling | Pheneme | Phoneme | Taxeme |
   | Smallest meaningful unit | Glosseme | Morpheme | Tagmeme |
   | Meaning of unit | Noeme | Sememe | Episememe |
