@@ -5,7 +5,8 @@ book:
   title: "Approaches to Linguistics"
   subtitle: "A reader in the history and philosophy of linguistics"
   author: "Alvin W. M. Tan"
-  date: "2/4/2025"
+  date: today
+  date-format: iso
   chapters:
     - index.qmd
     - 01-premodern-linguistics.qmd
